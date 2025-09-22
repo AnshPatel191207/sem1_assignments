@@ -2,14 +2,15 @@
 
 int main(){
 
-    int n, i ,j;
+    int i,n,j;
+    char alfabet='A';
     printf("Enter a number: ");
-    scanf("%d", &n);
-    
+    scanf("%d",&n);
+
     for(i=1; i<=n; i++){
-        for(j=1; j<= n; j++){
-            if(j<=n-i+1){printf("*");}
-            else{printf(" ");}
+        for(j=0; j<i; j++){
+            printf("%c ",alfabet);
+            alfabet++;
         }
         printf("\n");
     }

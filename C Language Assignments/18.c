@@ -6,9 +6,10 @@ int main(){
     printf("Enter a number: ");
     scanf("%d", &n);
     
-    for(i=0; i<n; i++){
-        for(j=0; j< n - i ; j++){
-            printf("%c ", 'A' + j);
+    for(i=1; i<=n; i++){
+        for(j=0; j< n; j++){
+            if(j<n-i+1){printf("%c ", 'A'+j);}
+            else{printf(" ");}
         }
         printf("\n");
     }
